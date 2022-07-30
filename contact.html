@@ -18,7 +18,7 @@
 <body>
 
 	<header>
-		<a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+		<a class="logo" href="#"><img src="images/logo.svg" alt=""></a>
 
 		<nav>
 			<ul class="nav__links">
@@ -49,11 +49,13 @@
 	    </label>
 	    
 	    <ul class="menu">
-	        <li><a href="./index.html" class="menu-link menu-work">Work</a></li>
-	        <li><a href="./about.html" class="menu-link menu-about">About</a></li>
-	        <li><a href="#" class="menu-link menu-contact">Contact</a></li>
+	        <li onclick="location.href='./index.html'"><a href="./index.html" class="menu-link menu-work">Work</a></li>
+	        <li onclick="location.href='./about.html'"><a href="./about.html" class="menu-link menu-about">About</a></li>
+	        <li onclick="location.href='./contact.html'"><a href="#" class="menu-link menu-contact">Contact</a></li>
 	    </ul>
 	</header>
+
+	<div id="overlay"></div>
 
 	<div class="container">
 
@@ -80,7 +82,7 @@
 
 						<input type="text" required>
 						<span class="highlight"></span>
-						<label>Your name</label>
+						<label class="label">Your name</label>
 
 					</div>
 
@@ -88,7 +90,7 @@
 
 						<input type="text" required>
 						<span class="highlight"></span>
-						<label>Your email</label>
+						<label class="label">Your email</label>
 
 					</div>
 
@@ -96,7 +98,7 @@
 
 				        <input type="text" required>
 				        <span class="highlight"></span>
-				        <label>Your message</label>
+				        <label class="label">Your message</label>
 
 					</div>
 
@@ -137,6 +139,32 @@
 	  </div>
 
 	</div>
+
+	<footer>
+		<div class="footer-content">
+	        <ul class="socials">
+	            <li>
+	            	<a class="icon-link" href="https://behance.com" target="blank">
+						<img class="icon icon-footer behance" src="images/behance.svg" alt="behance-icon">
+					</a>
+				</li>
+				<li>
+					<a class="icon-link" href="https://instagram.com" target="blank">
+						<img class="icon icon-footer instagram" src="images/instagram.svg" alt="instagram-icon">
+					</a>
+				</li>
+
+				<li>
+					<a class="icon-link" href="https://gmail.com" target="blank">
+						<img class="icon icon-footer gmail" src="images/gmail.svg" alt="gmail-icon"></i></a>
+				</li>
+	        </ul>
+    	</div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy; <a href="./index.html">Vasic Design</a>  </p>
+        </div>
+    </footer>
 	
 </body>
 </html>

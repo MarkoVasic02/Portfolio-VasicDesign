@@ -21,6 +21,7 @@ header {
 }
 
 .container {
+  position: absolute;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -33,6 +34,7 @@ body .menu-active .container {
 }*/
 
 .container .inner {
+  position: absolute;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -42,6 +44,7 @@ body .menu-active .container {
 }
 
 .container .inner .panel {
+  position: absolute;
   position: relative;
   box-sizing: border-box;
   height: 100%;
@@ -54,6 +57,29 @@ body .menu-active .container {
   margin-left: -10%;
 }
 
+#overlay {
+  position: fixed;
+  /*display: none; */
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F0B731;
+  opacity: 0;
+  /*z-index: 300;*/
+  /*position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #edf0f1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 1;*/
+}
+
 .container .inner .panel .panel-content {
   position: absolute;
   width: 100%;
@@ -63,24 +89,21 @@ body .menu-active .container {
   transform: translateX(-50%) translateY(-50%) skew(20deg);
 }
 
-.container .inner .panel.panel-left .panel-content img{
-  background-size: cover;
-}
-
 .container .inner .panel.panel-right {
+  position: relative;
   margin-right: -10%;
   background: #F0B731;
 }
 
 .container .inner .panel.panel-right .panel-content .form {
-  display: block;
+  /*display: block;*/
   position: absolute;
   margin: 0 auto;
   width: 300px;
   min-height: 400px;
   top: 45%;
   left: 45%;
-  transform: translateX(-50%) translateY(-25%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .container .inner .panel.panel-right .panel-content .form h1 {
@@ -116,7 +139,7 @@ input:focus {
   opacity: 1;
 }
 
-label {
+.label {
   color: #24242A; 
   font-size: 15px;
   font-weight: normal;
@@ -241,7 +264,7 @@ svg path{
 
 .active#btn{
     /*background: #ff2b75;*/
-    background: #EF593A;
+    background: #5C5FA9;
     transition: 1s;
 }
 
@@ -258,11 +281,52 @@ svg path{
 
 .active svg path{
     stroke-dashoffset: 0;
-    transition: 1s;
-    transition-delay: 1s;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+footer {
+  opacity: 0;
 }
 
 @media screen and (max-width: 895px){
 
+  .container .inner .panel {
+    transform: skew(0deg);
+  }
+
+  .container .inner .panel .panel-content {
+    transform: skew(0deg);
+  }
+
+  .container .inner .panel.panel-left .panel-content img{
+    position: relative;
+    top: -50vh;
+    right: 100vh;
+    height: 100vh;
+    opacity: 1;
+  }
+
+  #overlay {
+    opacity: .94;
+  }
+
+  .container .inner .panel.panel-left {
+    /*margin-left: -10%;*/
+    width: 100%;
+    z-index: -1;
+    /*box-shadow: rgba(0, 0, 0, 0.8) 0 0 0 10000px inset;*/
+    /*box-shadow: 0 0 0 100px inset, 0 0 5px grey;*/
+    
+  }
+
+  .container .inner .panel.panel-right .panel-content .form {
+    position: absolute;
+    width: 300px;
+    min-height: 400px;
+    top: -100%;
+    left: 25%;
+    /*transform: translateX(50%) translateY(25%);*/
+  }
 
 }

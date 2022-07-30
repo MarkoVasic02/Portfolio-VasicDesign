@@ -44,8 +44,8 @@ header {
 	cursor: pointer;
 	margin-right: auto;
 	display: flex;
-	width: 64px;
-	height: 64px;
+	width: 28px;
+	height: 28px;
 }
 
 .nav__links {
@@ -160,7 +160,7 @@ header {
   }
   .menu {
     position: absolute;
-    top: 110px;
+    top: 75px;
     /*margin-top: 50px;*/
     left: 0;
     flex-direction: column;
