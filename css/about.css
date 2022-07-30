@@ -93,11 +93,12 @@
 }
 
 .testimonial img {
+	display: block;
 	border-radius: 50%;
 	width: 200px;
 	height: 200px;
-	margin-left: 17%;
-	margin-right: 17%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 3%;
 }
 
