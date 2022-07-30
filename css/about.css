@@ -92,6 +92,15 @@
 	width: 50%;
 }
 
+.testimonial img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin-left: 17%;
+	margin-right: 17%;
+	margin-bottom: 3%;
+}
+
 .testimonial p {
 	color: #24242a;
 	font-weight: 100px;

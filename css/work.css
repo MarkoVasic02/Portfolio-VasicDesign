@@ -21,6 +21,11 @@
     flex: 100%;
     max-width: 100%;
   }
+
+  .portfolio {
+  	margin-left: 5%;
+  	margin-right: 5%;
+  }
 }
 
 .portfolio-overlay {

@@ -151,6 +151,13 @@ header {
 }
 
 @media (max-width: 800px) {
+
+  .logo {
+    width: 24px;
+    height: 24px;
+    margin-left: 0;
+  }
+
 	.icon-header, .nav__links {
   	display: none;
   }
