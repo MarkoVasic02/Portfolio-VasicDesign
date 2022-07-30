@@ -43,6 +43,7 @@
 
 .content-section .content .button{
 	margin-top: 50px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .content-section .content .button a{
