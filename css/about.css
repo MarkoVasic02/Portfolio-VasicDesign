@@ -1,0 +1,162 @@
+.section{
+	width: 100%;
+	min-height: 70vh;
+}
+
+.container{
+	width: 80%;
+	display: flex;
+	margin:auto;
+	padding-top: 100px;
+	align-items: center;
+}
+
+.content-section{
+	width: 55%;
+	margin-left: 100px;
+}
+
+.image-section{
+	width: 45%;
+	margin-right: 100px;
+}
+
+.image-section img{
+	width: 118%;
+	height: auto;
+	border-radius: 50px;
+}
+
+.content-section .content h3{
+	margin-top: 20px;
+	padding-bottom: 35px;
+	font-size: 28px;
+	color: #24242a;
+}
+
+.content-section .content p{
+	margin-top: 10px;
+	/*font-family: sans-serif;
+	font-size: 18px;*/
+	line-height: 1.8;
+}
+
+.content-section .content .button{
+	margin-top: 50px;
+}
+
+.content-section .content .button a{
+	background-color: #24242a;
+	padding:12px 30px;
+	text-decoration: none;
+	color:#edf0f1;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	border-radius: 10px;
+}
+
+.content-section .content .button a:hover{
+	background-color: #333333;
+	color:#edf0f1;
+}
+
+.section2 {
+	width: 100%;
+	margin-top: 200px;
+}
+
+.container2 {
+	width: 100%;
+}
+
+.section2 .container2 .title h2 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	color: #24242A;
+	padding-bottom: 30px;
+}
+
+.testimonials {
+	display: flex;
+	margin-top: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.testimonial {
+	float: left;
+	width: 50%;
+}
+
+.testimonial p {
+	color: #24242a;
+	font-weight: 100px;
+	line-height: 1.7;
+}
+
+.levi {
+	margin-right: 30px;
+}
+
+hr {
+	height: 1px;
+    background-color: #24242a;
+    border: none;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+@media screen and (max-width: 769px){
+	.container{
+		width: 80%;
+		display: block;
+		margin-left: 5%;
+		padding-top:15px;
+	}
+
+	.content-section{
+		width:100%;
+		display: block;
+		margin-left: 5%;
+	}
+
+	.content-section .content h3 {
+		font-size: 24px;
+	}
+
+	.image-section{
+		width: 112%;
+	}
+
+	.image-section img{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.content-section .content .button{
+		text-align: center;
+	}
+
+	.content-section .content .button a{
+		padding:9px 30px;
+	}
+
+	.testimonial {
+		width: 100%;
+		padding-bottom: 35px;
+	}
+
+	.section2 .container2 .title h2 {
+		margin-top: 50px;
+	}
+
+	.testimonials {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

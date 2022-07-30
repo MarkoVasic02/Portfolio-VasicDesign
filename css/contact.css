@@ -1,0 +1,268 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background: #edf0f1;
+}
+
+header {
+  margin-bottom: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+/*
+body .menu-active .container {
+  transform: scale(0.9);
+}*/
+
+.container .inner {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container .inner .panel {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  width: 60%;
+  float: left;
+  transform: skew(-20deg);
+}
+
+.container .inner .panel.panel-left {
+  margin-left: -10%;
+}
+
+.container .inner .panel .panel-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) skew(20deg);
+}
+
+.container .inner .panel.panel-left .panel-content img{
+  background-size: cover;
+}
+
+.container .inner .panel.panel-right {
+  margin-right: -10%;
+  background: #F0B731;
+}
+
+.container .inner .panel.panel-right .panel-content .form {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  width: 300px;
+  min-height: 400px;
+  top: 45%;
+  left: 45%;
+  transform: translateX(-50%) translateY(-25%);
+}
+
+.container .inner .panel.panel-right .panel-content .form h1 {
+  display: block;
+  margin: 0 0 45px 0;
+  color: #24242A;
+  font-weight: 200;
+  font-size: 23px;
+}
+
+.group { 
+  position: relative; 
+  margin-bottom: 25px; 
+}
+
+input {
+  font-size: 16px;
+  height: 30px;
+  padding: 15px 15px 15px 10px;
+  display: block;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #24242A;
+  color: #24242A;
+  background: rgba(0,0,0,0);
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  opacity: 1;
+}
+
+label {
+  color: #24242A; 
+  font-size: 15px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 0;
+  opacity: 0.5;
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+  top: -15px;
+  font-size: 13px;
+  color: #24242A;
+  opacity: 1;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%; 
+  width: 100px; 
+  top: 25%; 
+  left: 0;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to  { width:0; background:transparent; }
+}
+
+a.send-btn {
+  float: right;
+  color: #24242A;
+  transition: 0.2s ease;
+}
+
+a.send-btn:hover {
+  color: #333333;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.btn-container{
+    width: auto;
+    height: auto;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+.btn-container #btn{
+    width: 140px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/*#btnText {
+  color: #fff;
+  font-size: 15px;
+}*/
+
+.check-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.check-box svg{
+    width: 30px;
+    margin-top: 10px;
+}
+
+svg path{
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.active#btn{
+    /*background: #ff2b75;*/
+    background: #EF593A;
+    transition: 1s;
+}
+
+.active .check-box{
+    right: 0px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p{
+    margin-right: 45px;
+    transition: 0.7s;
+}
+
+.active svg path{
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+@media screen and (max-width: 895px){
+
+
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/contact.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+	<script src="./script.js"></script>
+
+	<title>Contact</title>
+</head>
+<body>
+
+	<header>
+		<a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+
+		<nav>
+			<ul class="nav__links">
+				<li><a href="./index.html" class="link work">Work</a></li>
+				<li><a href="./about.html" class="link about">About</a></li>
+				<li><a href="#" class="link contact">Contact</a></li>
+			</ul>
+			
+		</nav>
+
+		<div>
+			<a class="icon-link" href="https://behance.com" target="blank">
+				<img class="icon icon-header behance" src="images/behance.svg" alt="behance-icon">
+			</a>
+			<a class="icon-link" href="https://instagram.com" target="blank">
+				<img class="icon icon-header instagram" src="images/instagram.svg" alt="instagram-icon">
+			</a>
+			<a class="icon-link" href="https://gmail.com" target="blank">
+				<img class="icon icon-header gmail" src="images/gmail.svg" alt="gmail-icon">
+
+			</a>
+		</div>
+
+	    <input id="menu-toggle" type="checkbox" />
+	    
+	    <label class='menu-button-container' for="menu-toggle">
+	    	<div class='menu-button'></div>
+	    </label>
+	    
+	    <ul class="menu">
+	        <li><a href="./index.html" class="menu-link menu-work">Work</a></li>
+	        <li><a href="./about.html" class="menu-link menu-about">About</a></li>
+	        <li><a href="#" class="menu-link menu-contact">Contact</a></li>
+	    </ul>
+	</header>
+
+	<div class="container">
+
+	  <div class="inner">
+
+	    <div class="panel panel-left">
+
+	      <div class="panel-content">
+	        <!-- <div class="image-background"></div> -->
+	        <img src="images/background-contact.png" alt="Dave Something">
+
+	      </div>
+
+	    </div>
+
+	    <div class="panel panel-right">
+
+	        <div class="panel-content">
+
+				<div class="form">
+					<h1>Leave a comment</h1>
+
+					<div class="group">   
+
+						<input type="text" required>
+						<span class="highlight"></span>
+						<label>Your name</label>
+
+					</div>
+
+					<div class="group"> 
+
+						<input type="text" required>
+						<span class="highlight"></span>
+						<label>Your email</label>
+
+					</div>
+
+					<div class="group"> 
+
+				        <input type="text" required>
+				        <span class="highlight"></span>
+				        <label>Your message</label>
+
+					</div>
+
+		            <!-- <a class="send-btn">Send</a> -->
+
+					<div class="btn-container">
+				        <button id="btn">
+
+				            <p id="btnText">Submit</p>
+
+				            <div class="check-box">
+
+				                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+				                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+				                </svg>
+				                
+				            </div>
+
+				        </button>
+					</div>
+
+				    <script type="text/javascript">
+				        const btn = document.querySelector("#btn");
+				        const btnText = document.querySelector("#btnText");
+
+				        btn.onclick = () => {
+				            btnText.innerHTML = "Thanks";
+				            btn.classList.add("active");
+				        };
+				    </script>
+
+	            </div>
+
+	        </div>
+
+	    </div>
+
+	  </div>
+
+	</div>
+	
+</body>
+</html>
