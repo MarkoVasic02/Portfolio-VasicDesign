@@ -24,9 +24,10 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 25px 5%;
+    padding: 25px 4%;
     z-index: 999;
     background-color: #edf0f1;
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 

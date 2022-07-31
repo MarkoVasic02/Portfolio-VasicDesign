@@ -17,7 +17,8 @@ body {
 }
 
 header {
-  margin-bottom: 0;
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
 
 .container {
@@ -291,6 +292,11 @@ footer {
 }
 
 @media screen and (max-width: 895px){
+
+  header {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   .container .inner .panel {
     transform: skew(0deg);
